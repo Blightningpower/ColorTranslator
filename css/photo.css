@@ -1,0 +1,167 @@
+html {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  body {
+    width: 99%;
+    background-color: #228BE6;
+  }
+
+  select.custom-select, img.screenshot-image.d-none {
+    visibility: hidden;
+  }
+
+  img.screenshot-image {
+    width: 75%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 5em;
+    border: 2px solid #FCDC49;
+  }
+
+  .display-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 5% auto;
+    position: relative;
+  }
+
+  video {
+    width: 230px;
+    margin-right: 2em;
+    margin-top: -55px;
+    border: 2px solid #FCDC49;
+  }
+
+  canvas.d-none {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -3em;
+    visibility: hidden;
+  }
+
+  .video-options {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+  }
+
+  .controls {
+    position: absolute;
+    right: 23em;
+    top: 29em;
+    display: flex;
+  }
+
+  .controls > button:hover svg {
+    color: white !important;
+  }
+
+  @media (min-width: 300px) and (max-width: 400px) {
+    .controls {
+      flex-direction: column;
+    }
+
+
+
+    @media (min-width: 300px) and (max-width: 400px) {
+      .controls {
+        flex-direction: column;
+      }
+
+      .controls button {
+        margin: 5px 0 !important;
+      }
+    }
+
+    .controls button {
+      margin: 5px 0 !important;
+    }
+  }
+
+  .controls button:nth-child(1) {
+    border: 2px solid #ffffff;
+    color: #FCDC49;
+    background-color: #D2002E;
+  }
+
+  svg.feather.feather-play-circle{
+    margin-top: 2px;
+  }
+
+  .controls button:nth-child(2) {
+    border: 2px solid #ffffff;
+    color: #FCDC49;
+    background-color: #008496;
+  }
+
+  svg.feather.feather-pause{
+    margin-top: 2px;
+  }
+
+  .controls button:nth-child(3) {
+    border: 2px solid #ffffff;
+    background-color: #00B541;
+    color: #FCDC49;
+  }
+
+  svg.feather.feather-image{
+    margin-top: 2px;
+  }
+
+  .controls > button:hover svg {
+    color: white;
+  }
+
+  .controls > button > svg {
+    height: 20px;
+    width: 18px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .controls > button {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 6px;
+    background: #D2002E;
+  }
+
+  .controls > button:hover svg {
+    color: white;
+  }
+
+  .goBackButton {
+    background-color: #ff0000;
+    outline: 2px solid Black;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 1em;
+    left: 88em;
+  }
+
+  .goBackButton:hover {
+    background: yellow;
+  }
+
+  .goBackButton:active {
+    background: #008168;
+  }
+
+  [alt= "goBackButtonText"] {
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    color: #FCDC49;
+    height: 100%;
+    font-size: 20px;
+  }

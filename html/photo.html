@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>CTA Photo camera</title>
+  
+  <!--links for the Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+
+  <!--meta tags for responsiveness-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta charset="utf-8">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/photo.css">
+
+  <!-- Scriptfiles -->
+  <script src="../js/photo.js" defer></script>
+
+  <style>
+
+    
+  </style>
+<body>
+
+<div class="display-cover">
+  <video autoplay></video>
+  <canvas class="d-none"></canvas>
+
+  <div class="video-options">
+    <label for=""></label><select name="" id="" class="custom-select"></select>
+  </div>
+
+  <img class="screenshot-image d-none" alt="" src="">
+
+  <div class="controls">
+    <button class="btn btn-danger play" title="Play"><i data-feather="play-circle">Play</i></button>
+    <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause">Pause</i></button>
+    <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image">Take
+      screenshot</i></button>
+  </div>
+</div>
+<button class="goBackButton" type="button"><a href="../index.html" alt="goBackButtonText" target="_self">Go Back</a>
+</button>
+
+</body>
+</html>
