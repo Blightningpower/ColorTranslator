@@ -1,14 +1,3 @@
-html {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  body {
-    width: 99%;
-    background-color: #228BE6;
-  }
-
   select.custom-select, img.screenshot-image.d-none {
     visibility: hidden;
   }
@@ -137,31 +126,4 @@ html {
 
   .controls > button:hover svg {
     color: white;
-  }
-
-  .goBackButton {
-    background-color: #ff0000;
-    outline: 2px solid Black;
-    border-radius: 30px;
-    overflow: hidden;
-    position: absolute;
-    top: 1em;
-    left: 88em;
-  }
-
-  .goBackButton:hover {
-    background: yellow;
-  }
-
-  .goBackButton:active {
-    background: #008168;
-  }
-
-  [alt= "goBackButtonText"] {
-    text-decoration: none;
-    display: inline-flex;
-    text-align: center;
-    color: #FCDC49;
-    height: 100%;
-    font-size: 20px;
   }

@@ -2,7 +2,7 @@ var video = document.querySelector("#videoElement");
 
   function open_camera() {
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
-    if (navigator.getUserMedia) { // true or false 0 of 1
+    if (navigator.getUserMedia) {
       navigator.getUserMedia({video: true}, handleVideo, videoError);
     }
   }
@@ -15,3 +15,17 @@ var video = document.querySelector("#videoElement");
   function videoError(e) {
     alert("OOPS, there's an error");
   }
+
+  const colorBox = document.getElementById('color-box');
+    const colorPicker = document.getElementById('color-picker');
+
+    // Show color picker when color box is clicked
+    colorBox.addEventListener('click', () => {
+      colorPicker.click();
+    });
+
+    // Update color box background color when a color is selected
+    colorPicker.addEventListener('input', () => {
+      const color = colorPicker.value;
+      colorBox.style.backgroundColor = color;
+    });

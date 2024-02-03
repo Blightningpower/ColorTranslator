@@ -24,7 +24,7 @@ body {
 p {
     color: DarkGreen;
     background-color: #FCDC49;
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     border: 4px solid Violet;
     border-radius: 30px;
     padding: 10px;
@@ -56,7 +56,6 @@ p {
     padding-inline:  10px;
     display: flex;
     align-items: center;
-    text-decoration: none;
     color: #FCDC49;
     font-size: 2rem;
 }
@@ -81,3 +80,33 @@ p {
 .center {
     text-align: center;
 }
+
+.goBackButton {
+    background-color: #ff0000;
+    outline: 2px solid Black;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: #FCDC49;
+    font-size: 1.5rem;
+    padding: 4px;
+  }
+
+  .goBackButton:hover {
+    background: yellow;
+  }
+
+  .goBackButton:active {
+    background: #008168;
+  }
+
+  [alt= "goBackButtonText"] {
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    color: #FCDC49;
+    height: 100%;
+    font-size: 20px;
+  }

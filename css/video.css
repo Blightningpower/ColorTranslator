@@ -1,38 +1,19 @@
-body {
-    background-color: #228BE6;
-  }
+#videoElement {
+  border: 3px solid yellow;
+  min-width: 55vw;
+  margin: auto;
+}
 
-  #videoElement {
-    border: 3px solid yellow;
-    width: 44em;
-    height: 33em;
-    margin-left: 24%;
-  }
-
-  .goBackButton {
-    background-color: #ff0000;
-    outline: 2px solid Black;
-    border-radius: 30px;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 1%;
-    margin-left: 10em;
-    width: fit-content;
-  }
-
-  .goBackButton:hover {
-    background: yellow;
-  }
-
-  .goBackButton:active {
-    background: #008168;
-  }
-
-  [alt= "goBackButtonText"] {
-    text-decoration: none;
-    display: inline-flex;
-    text-align: center;
-    color: #FCDC49;
-    height: 100%;
-    font-size: 20px;
-  }
+.color-picker {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.color-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  cursor: pointer;
+}
